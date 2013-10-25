@@ -2,9 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
 <title>COMP 7081 - Assignment 2 (Group 1)</title>
+<link rel="stylesheet" href="../css/gantt.css">
 <link rel="stylesheet" href="../css/bootstrap.css">
 <link rel="stylesheet" href="../css/sticky-footer-navbar.css">
+</style>
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.js"></script>
 <!--[if lt IE 9]>
@@ -64,8 +67,7 @@
       <div class="page-header">
         <h1>Gantt Chart</h1>
       </div>
-      <h3 id="overview-introduction">Diagrams</h3>
-      
+        <div class="gantt"></div>
        <br>
        <h3 id="overview-background">Description</h3>
       <p>{{ Description Here}}</p>
@@ -83,4 +85,137 @@
 <!-- End page footer -->
 
 </body>
+<script src="../js/jquery.fn.gantt.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script>
+
+    $(function() {
+
+      "use strict";
+
+      $(".gantt").gantt({
+        source: [{
+          name: "Sprint 0",
+          desc: "Analysis",
+          values: [{
+            from: "/Date("+ dateParser('2011-10-1') +")/",
+            to: "/Date("+ dateParser('2011-10-28') +")/",
+            label: "Requirement Gathering", 
+            customClass: "ganttRed"
+          }]
+        },{
+          name: " ",
+          desc: "Scoping",
+          values: [{
+            from: "/Date(1322611200000)/",
+            to: "/Date(1323302400000)/",
+            label: "Scoping", 
+            customClass: "ganttRed"
+          }]
+        },{
+          name: "Sprint 1",
+          desc: "Development",
+          values: [{
+            from: "/Date(1323802400000)/",
+            to: "/Date(1325685200000)/",
+            label: "Development", 
+            customClass: "ganttGreen"
+          }]
+        },{
+          name: " ",
+          desc: "Showcasing",
+          values: [{
+            from: "/Date(1325685200000)/",
+            to: "/Date(1325695200000)/",
+            label: "Showcasing", 
+            customClass: "ganttBlue"
+          }]
+        },{
+          name: "Sprint 2",
+          desc: "Development",
+          values: [{
+            from: "/Date(1326785200000)/",
+            to: "/Date(1325785200000)/",
+            label: "Development", 
+            customClass: "ganttGreen"
+          }]
+        },{
+          name: " ",
+          desc: "Showcasing",
+          values: [{
+            from: "/Date(1328785200000)/",
+            to: "/Date(1328905200000)/",
+            label: "Showcasing", 
+            customClass: "ganttBlue"
+          }]
+        },{
+          name: "Release Stage",
+          desc: "Training",
+          values: [{
+            from: "/Date(1330011200000)/",
+            to: "/Date(1336611200000)/",
+            label: "Training", 
+            customClass: "ganttOrange"
+          }]
+        },{
+          name: " ",
+          desc: "Deployment",
+          values: [{
+            from: "/Date(1336611200000)/",
+            to: "/Date(1338711200000)/",
+            label: "Deployment", 
+            customClass: "ganttOrange"
+          }]
+        },{
+          name: " ",
+          desc: "Warranty Period",
+          values: [{
+            from: "/Date(1336611200000)/",
+            to: "/Date(1349711200000)/",
+            label: "Warranty Period", 
+            customClass: "ganttOrange"
+          }]
+        }],
+        navigate: "scroll",
+        scale: "weeks",
+        minScale: "days",       
+        maxScale: "months",
+        itemsPerPage: 10,
+        onItemClick: function(data) {
+          //alert("Item clicked - show some details");
+        },
+        onAddClick: function(dt, rowId) {
+          //alert("Empty space clicked - add an item!");
+        },
+        onRender: function() {
+          if (window.console && typeof console.log === "function") {
+            console.log("chart rendered");
+          }
+        }
+      });
+
+      //$(".gantt").popover({
+      //  selector: ".bar",
+      //  title: "Detail",
+      //  content: "Here is details.",
+      //  trigger: "hover"
+      //});
+
+      prettyPrint();
+
+       function dateParser (mydate) {
+        if (mydate !== undefined) {
+            var a = mydate.split("-");
+            var yearMy = a[0];
+            var monthMy = a[1];
+            var dayMy = a[2];
+            var finalDate = new Date(yearMy, monthMy, dayMy);
+            var finalDate = finalDate.getTime();
+            return finalDate;
+          }  
+        } 
+
+    });
+    </script>
 </html>
