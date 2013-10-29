@@ -65,10 +65,2654 @@
         <h1>Requirement Analysis</h1>
       </div>
       <h3 id="overview-introduction">Use Cases</h3>
-      
-       <br>
+     
        <h3 id="overview-background">Description</h3>
-      <p>{{ Description Here}}</p>
+      <p><h4 id="UC1"><span style="text-decoration: underline;">Use Case Diagram 1: SuperRent Vehicle Reservation Module</span></h4></p>
+	  <br>
+	  <IMG SRC="../analysis/UseCaseDiagrams/VehicleReservationSystem.jpg" ALT="SuperRent Vehicle Reservation Module">
+	  <br>
+	  <h3>
+    <a name="_Toc316365791">Use Case 1 –</a>
+    Login
+</h3>
+<table width="100%" border="4" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use CaseNumber
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-01
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Name
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Login
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Purpose
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    To log into SuperRent Vehicle Reservation System
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Overview
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    This use case describes user login to SuperRent Vehicle Reservation System.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Type
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Essential
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Preconditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User must have a valid user account in the system or create a new account before logging in.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Post-conditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    If the use case was successful, the actor is now logged into SuperRent Vehicle Reservation system. If not, system state goes back to
+                    initial state.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Primary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Customer and Clerk
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Secondary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User account management system
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Trigger
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User clicks on “Login” button
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top" rowspan="2">
+                <p>
+                    <strong>Flow of events</strong>
+                </p>
+                <p>
+                    Basic Flow
+                </p>
+            </td>
+            <td width="32%" valign="top">
+                <p>
+                    <strong>Actor Action</strong>
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    <strong>System Response</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="32%" valign="top">
+                <p>
+                    1. User clicks on Login button.
+                </p>
+                <p>
+                    2. User enters a username and password.
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    1. The system prompts the user to enter a username and password.
+                </p>
+                <p>
+                    2. System validates user account and if successful presents “Vehicle Reservation Module” to the user.
+                </p>
+                <p>
+                    3. End of Use Case.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow 1.
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    If username and password fields are not filled out or username and password entered by the user does not match user account information in
+                    the system, it notifies the user via a message and goes back to step 1 and re-displays login window to the user.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow 2.<strong></strong>
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    If the user does not have an account they can create a new account by clicking on “register” button.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+</br>
+<br>
+<h3>
+    Use Case 2 – Search Vehicle
+</h3>
+<table width="100%" border="4" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Number
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-02
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Name
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Search Vehicle
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Purpose
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Users can search vehicles to reserve based on their requirements
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Overview
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    This use case allows the customer or staff to search vehicles based on user requirements such as location, vehicle type and date/time for
+                    pickup and return.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Type
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Essential
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Preconditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-1 and user must provide location, vehicle type and reservation date/time information in order to search for a vehicle that meets this
+                    criteria.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Post-conditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Vehicle information is displayed to the user.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Primary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Customer and Clerk
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Secondary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Vehicle Inventory Management System
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Trigger
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User clicks on “Search Vehicle to Reserve” link
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top" rowspan="2">
+                <p>
+                    <strong>Flow of events</strong>
+                </p>
+                <p>
+                    Basic Flow
+                </p>
+            </td>
+            <td width="32%" valign="top">
+                <p>
+                    <strong>Actor Action</strong>
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    <strong>System Response</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="32%" valign="top">
+                <p>
+                    1. User clicks on “Search Vehicle to Reserve” link
+                </p>
+                <p>
+                    2. User selects vehicle type, location and pick-up and return date and times from the combo box and clicks on search button.
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    1. The system displays a combo box for user to select location, vehicle type and pick-up and return date and times.
+                </p>
+                <p>
+                    2. The system finds vehicles based on search criteria and displays it to the user.
+                </p>
+                <p>
+                    3. End of use case.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    If the user did not select the search criteria from the combo box, system will go back to step 1 and re-display the selection box to the
+                    user.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+</br>
+<br>
+<h3>
+    Use Case 3 – Make Vehicle Reservation
+</h3>
+<p>
+    <em></em>
+</p>
+<table width="100%" border="4" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Number
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-03
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Name
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Make Vehicle Reservation
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Purpose
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    To make a vehicle reservation
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Overview
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    This use case will be used by the customer or clerk to make a vehicle reservation
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Type
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Essential
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Preconditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-02 and the user provided customer information such as customer name and phone number.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Post-conditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    If the use case was successful, the user can now reserve a vehicle and the system prints a confirmation number after reservation is
+                    completed.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Primary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Customer and Clerk
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Secondary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Vehicle Inventory Management System
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Trigger
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User clicks on “Reserve a Vehicle” button
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top" rowspan="2">
+                <p>
+                    <strong>Flow of events</strong>
+                </p>
+                <p>
+                    Basic Flow
+                </p>
+            </td>
+            <td width="32%" valign="top">
+                <p>
+                    <strong>User Action</strong>
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    <strong>System Response</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="32%" valign="top">
+                <p>
+                    1. User clicks on “Reserve a Vehicle” button
+                </p>
+                <p>
+                    2. User provides location, vehicle type and pickup and return date/time information.
+                </p>
+                <p>
+                    3. User provides his/her name and phone number and proceeds with vehicle reservation.
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    1. The system prompts the user to choose a location, choose a vehicle and choose pickup and return date/time.
+                </p>
+                <p>
+                    2. If the system is able to find the vehicle based on information provided in step 2 then the system provides “estimated rental cost” to
+                    the user.
+                </p>
+                <p>
+                    3. If vehicle reservation is successful then the system prints a confirmation number.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    If the user did not fill out name and phone number fields then the system will prompt the user to fill out these required fields or cancel
+                    the reservation process.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+</br>
+<br>
+<h3>
+    Use Case 4 – Cancel Vehicle Reservation
+</h3>
+<p>
+    <em></em>
+</p>
+<table width="100%" border="4" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Number
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-04
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Name
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Cancel Vehicle Reservation
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Purpose
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    To cancel a vehicle reservation
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Overview
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    This use case will be used by the customer or clerk to cancel a vehicle reservation
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Type
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Essential
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Preconditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-02 or UC-03.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Post-conditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    If the use case was successful then the vehicle reservation is successfully cancelled in the vehicle reservation system.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Primary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Customer and Clerk
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Secondary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Vehicle Inventory Management System
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Trigger
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User clicks on “Cancel Reservation” button or hyperlink
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top" rowspan="2">
+                <p>
+                    <strong>Flow of events</strong>
+                </p>
+                <p>
+                    Basic Flow
+                </p>
+            </td>
+            <td width="32%" valign="top">
+                <p>
+                    <strong>User Action</strong>
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    <strong>System Response</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="32%" valign="top">
+                <p>
+                    1. User clicks on “Cancel Reservation” button
+                </p>
+                <p>
+                    2. User enters confirmation number or phone number.
+                </p>
+                <p>
+                    3. User clicks on “Yes” button to confirm cancellation of vehicle reservation.
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    1. The system prompts the user for confirmation number or the customer phone number.
+                </p>
+                <p>
+                    2. System checks confirmation number or phone number and searches the reservation and displays existing reservation to the user and asks
+                    for confirmation to cancel.
+                </p>
+                <p>
+                    3. The system cancels the reservation.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow 1
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User didn’t provide confirmation number or phone number or provided incorrect confirmation number phone number.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow 2
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User didn’t confirm cancellation by clicking on “Yes” button or pressed on “No” button.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+</br>
+<br>
+<h3>
+    Use Case 5 – Update Vehicle Reservation
+</h3>
+<p>
+    <em></em>
+</p>
+<table width="100%" border="4" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Number
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-05
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Name
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Update Vehicle Reservation
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Purpose
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    To update a vehicle reservation
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Overview
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    This use case will be used by the customer or clerk to update a vehicle reservation
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Type
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Essential
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Preconditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-03.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Post-conditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    If the use case was successful then the vehicle reservation is successfully updated in the vehicle reservation system.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Primary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Customer and Clerk
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Secondary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Vehicle Inventory Management System
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Trigger
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User clicks on “Update Reservation” button or hyperlink
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top" rowspan="2">
+                <p>
+                    <strong>Flow of events</strong>
+                </p>
+                <p>
+                    Basic Flow
+                </p>
+            </td>
+            <td width="32%" valign="top">
+                <p>
+                    <strong>User Action</strong>
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    <strong>System Response</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="32%" valign="top">
+                <p>
+                    1. User clicks on “Update Reservation” button
+                </p>
+                <p>
+                    2. User entered confirmation number or the phone number.
+                </p>
+                <p>
+                    3. User edits the vehicle information or account information to update.
+                </p>
+                <p>
+                    4. User clicks on “Confirm” button to update the information in the system.
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    1. The system prompts the user for confirmation number or the customer phone number.
+                </p>
+                <p>
+                    2. The system finds the reservation and presents vehicle selection menu and user information menu to update.
+                </p>
+                <p>
+                    3. The system prompts the user to confirm updates.
+                </p>
+                <p>
+                    4. The system confirms that the information has been successfully updated.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow 1
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User didn’t provide confirmation number or phone number or provided incorrect confirmation number phone number.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow 2
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User didn’t confirm the updates or cancels updates. The system will go back to initial state.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+</br>
+<br>
+<h3>
+    Use Case 6 – View Vehicle Reservation
+</h3>
+<p>
+    <em></em>
+</p>
+<table width="100%" border="4" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Number
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-06
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Name
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    View Vehicle Reservation
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Purpose
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    To view a vehicle reservation.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Overview
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    This use case will be used by the customer or clerk to view a vehicle reservation
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Type
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Essential
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Preconditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-03. Reservation has to exist before it can be viewed.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Post-conditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    If the use case was successful then the vehicle reservation details will be displayed.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Primary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Customer and Clerk
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Secondary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    None
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Trigger
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User clicks on “View Reservation” button or hyperlink
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top" rowspan="2">
+                <p>
+                    <strong>Flow of events</strong>
+                </p>
+                <p>
+                    Basic Flow
+                </p>
+            </td>
+            <td width="32%" valign="top">
+                <p>
+                    <strong>User Action</strong>
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    <strong>System Response</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="32%" valign="top">
+                <p>
+                    1. User clicks on “View Reservation” button
+                </p>
+                <p>
+                    2. User enters “Confirmation Number” or the “Phone Number”
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    1. The system prompts the user to enter “Confirmation Number” or “Phone Number”
+                </p>
+                <p>
+                    2. The system checks the database and retrieves the reservation and displays reservation details to the user.
+                </p>
+                <p>
+                    3. End of Use Case.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow 1.
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User didn’t enter “Confirmation Number” or the “Phone Number”. In this case system will prompt the user again to enter this information.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow 2.
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    System is unable to find “Confirmation Number” or the “Phone Number”. System displays the message, “No reservation records found”.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+</br>
+<br>
+<h3>
+    Use Case 7 –Logout
+</h3>
+<table width="100%" border="4" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use CaseNumber
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-07
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Name
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Logout
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Purpose
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    To log out from the SuperRent Vehicle Reservation System
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Overview
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    This use case describes user logout from the SuperRent Vehicle Reservation System
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Type
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Essential
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Preconditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC - 1
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Post-conditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User successfully logged out of the system.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Primary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Customer and Clerk
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Secondary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User account management system
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Trigger
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User clicks on “Logout” button or hyperlink
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top" rowspan="2">
+                <p>
+                    <strong>Flow of events</strong>
+                </p>
+                <p>
+                    Basic Flow
+                </p>
+            </td>
+            <td width="32%" valign="top">
+                <p>
+                    <strong>Actor Action</strong>
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    <strong>System Response</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="32%" valign="top">
+                <p>
+                    1. User clicks on Logout button or the hyperlink.
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    1. The system responds by logging out the user and displaying a message to the user that the “logout” was successful.
+                </p>
+                <p>
+                    2. End of the Use Case.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<h4>
+    <p>
+        <em> </em>
+    </p>
+</h4>
+</br>
+<br>
+<br>
+ <h3 id="overview-background">Description</h3>
+      <p><h4 id="UC1"><span style="text-decoration: underline;">Use Case Diagram 2: SuperRent Club Membership Module</span></h4></p>
+	  <IMG SRC="../analysis/UseCaseDiagrams/ClubMembershipModule.jpg" ALT="SuperRent Club Membership Module">
+	  </br>
+	  <br>
+	  <h3>
+    <a name="_Toc316365791">Use Case 1 – </a>
+    User Login
+</h3>
+<table width="100%" border="4" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use CaseNumber
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-01
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Name
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User Login
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Purpose
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    To log into SuperRent Club Membership System
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Overview
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    This use case describes user login to SuperRent Club Membership System.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Type
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Essential
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Preconditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User must have a valid user account in the system or create a new account before logging in.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Post-conditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    If the use case was successful, the actor is now logged into SuperRent Club Membership system. If not, system state goes back to initial
+                    state.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Primary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Customer and Clerk
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Secondary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User account management system
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Trigger
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User clicks on “Login” button
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top" rowspan="2">
+                <p>
+                    <strong>Flow of events</strong>
+                </p>
+                <p>
+                    Basic Flow
+                </p>
+            </td>
+            <td width="32%" valign="top">
+                <p>
+                    <strong>Actor Action</strong>
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    <strong>System Response</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="32%" valign="top">
+                <p>
+                    1. User clicks on Login button.
+                </p>
+                <p>
+                    2. User enters a username and password.
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    1. The system prompts the user to enter a username and password.
+                </p>
+                <p>
+                    2. System validates user account and if successful presents “SuperRent Club Membership Module” to the user.
+                </p>
+                <p>
+                    3. End of Use Case.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow 1.
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    If username and password fields are not filled out or username and password entered by the user does not match user account information in
+                    the system, it notifies the user via a message and goes back to step 1 and re-displays login window to the user.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow 2.<strong></strong>
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    If the user does not have an account they can create a new account by clicking on “register” button.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</br>
+<br>
+<h3>
+    Use Case 2 – Create Club Membership
+</h3>
+<table width="100%" border="4" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Number
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-02
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Name
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Create Club Membership
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Purpose
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    To add a new club member account
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Overview
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    This use case describes adding new club members to SuperRent Club Membership System.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Type
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Essential
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Preconditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC - 1
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Post-conditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    If the use case was successful the new club member account is added to Club Membership system and assigned 500 member points.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Primary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Customer and Clerk
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Secondary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Payment processing system
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Trigger
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User clicks on “Add New Club Member” button or hyperlink
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top" rowspan="2">
+                <p>
+                    <strong>Flow of events</strong>
+                </p>
+                <p>
+                    Basic Flow
+                </p>
+            </td>
+            <td width="32%" valign="top">
+                <p>
+                    <strong>Actor Action</strong>
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    <strong>System Response</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="32%" valign="top">
+                <p>
+                    1. User clicks on “Add New Club Member” button.
+                </p>
+                <p>
+                    2. User completes online application and clicks the submit button.
+                </p>
+                <p>
+                    3. User pays the annual membership fee using one of the valid payment methods.
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    1. The system presents the user with an online application to join club membership.
+                </p>
+                <p>
+                    2. The system validates the information entered in the application and if all the required fields are filled, the system shows the annual
+                    membership fee and modes of payment.
+                </p>
+                <p>
+                    3. System processes and authenticates the payment and if successful shows a message to the user that club member registration was
+                    successful.
+                </p>
+                <p>
+                    4. System assigns 500 member points and updates member’s record with 500 membership points.
+                </p>
+                <p>
+                    5. End of the Use Case
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow 1.
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    If the user did not fill out all the required fields on online application then the system prompts the user with appropriate message to
+                    fill out all the required fields.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow 2.<strong></strong>
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    If the payment for annual membership fee was not successful then the system prompts the user to make a payment or cancel out of the club
+                    membership registration system.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</br>
+<br>
+<h3>
+    Use Case 3 – Cancel Club Membership
+</h3>
+<p>
+    <em></em>
+</p>
+<table width="100%" border="4" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Number
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-03
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Name
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Cancel Club Membership
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Purpose
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    To cancel club membership
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Overview
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    This use case will be used by the customer or clerk to cancel a club member account
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Type
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Essential
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Preconditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-01 and UC-02.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Post-conditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    If the use case was successful then the club membership is cancelled.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Primary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Customer and Clerk
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Secondary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    None
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Trigger
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User clicks on “Cancel Club Membership” button or hyperlink
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top" rowspan="2">
+                <p>
+                    <strong>Flow of events</strong>
+                </p>
+                <p>
+                    Basic Flow
+                </p>
+            </td>
+            <td width="32%" valign="top">
+                <p>
+                    <strong>User Action</strong>
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    <strong>System Response</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="32%" valign="top">
+                <p>
+                    1. User clicks on “Cancel Club membership” button.
+                </p>
+                <p>
+                    2. User provides the Club member account information.
+                </p>
+                <p>
+                    3. User confirms club member account deletion by clicking on the confirm button.
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    1. The system prompts the user for club member account information.
+                </p>
+                <p>
+                    2. The system confirms the account information and pulls up user account. The system then prompts the user for confirmation to delete user
+                    account.
+                </p>
+                <p>
+                    3. The Club member account is deleted and points are reset to zero.
+                </p>
+                <p>
+                    4. End of the use case.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow 1.
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User did not provide the club member account information. The system prompts the user again for this information.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow 2.
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Club member account not found. System prompts the user with appropriate message that the club member account was not found.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow 3.
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User did not confirm club member account deletion. User is re-prompted to confirm or cancel club member account deletion.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<h3>
+    Use Case 4 – Update Club Membership
+</h3>
+<p>
+    <em></em>
+</p>
+<table width="100%" border="4" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Number
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-04
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Name
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Update Club Membership
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Purpose
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    To update club member’s account information
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Overview
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    This use case will be used by the customer or clerk to update a club member’s account information in Club Membership Management System.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Type
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Essential
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Preconditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-02.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Post-conditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    If the use case was successful then the member information will be updated.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Primary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Customer and Clerk
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Secondary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    None
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Trigger
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User clicks on “Update Club Member Information” button or hyperlink
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top" rowspan="2">
+                <p>
+                    <strong>Flow of events</strong>
+                </p>
+                <p>
+                    Basic Flow
+                </p>
+            </td>
+            <td width="32%" valign="top">
+                <p>
+                    <strong>User Action</strong>
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    <strong>System Response</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="32%" valign="top">
+                <p>
+                    1. User clicks on “Update club member information” button or hyperlink.
+                </p>
+                <p>
+                    2. User enters club member account information.
+                </p>
+                <p>
+                    3. User updates the required fields and clicks on submit button.
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    1. The system prompts the user for account information.
+                </p>
+                <p>
+                    2. The system validates account information and displays editable fields to the user.
+                </p>
+                <p>
+                    3. The system updates club member account information based on user input and prompts the user with the message that the update was
+                    successful.
+                </p>
+                <p>
+                    4. End of the Use Case.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow 1.
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User did not provide the club member account information. The system prompts the user again for this information.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow 2.
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Club member account not found. System prompts the user with appropriate message that the club member account was not found.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow 3.
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User did not update any fields or pressed cancelled button. The system goes back to initial state.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<h3>
+    Use Case 5 – Check Membership Points
+</h3>
+<p>
+    <em></em>
+</p>
+<table width="100%" border="4" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Number
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-05
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Name
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Check Membership Points
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Purpose
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    To check a club member’s membership points.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Overview
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    This use case will be used by the customer or clerk to view a club member’s membership points.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Type
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Essential
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Preconditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-02.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Post-conditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    If the use case was successful then the club member’s membership points will be displayed.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Primary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Customer and Clerk
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Secondary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    None
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Trigger
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User clicks on “Check membership points” button or hyperlink
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top" rowspan="2">
+                <p>
+                    <strong>Flow of events</strong>
+                </p>
+                <p>
+                    Basic Flow
+                </p>
+            </td>
+            <td width="32%" valign="top">
+                <p>
+                    <strong>User Action</strong>
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    <strong>System Response</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="32%" valign="top">
+                <p>
+                    1. User clicks on “Check membership points” button or hyperlink.
+                </p>
+                <p>
+                    2. User enters club member account information.
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    1. The system prompts the user for account information.
+                </p>
+                <p>
+                    2. The system validates account information and retrieves club member points and displays them to the user.
+                </p>
+                <p>
+                    3. End of the Use Case.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow 1.
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User did not provide the club member account information. The system prompts the user again for this information.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Exceptional Flow 2.
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Club member account not found. System prompts the user with appropriate message that the club member account was not found.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+</br>
+
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+</br>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+</br>
+<br>
+<h3>
+    Use Case 6 – User Logout
+</h3>
+<table width="100%" border="4" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use CaseNumber
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC-06
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Use Case Name
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User Logout
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Purpose
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    To log out from the SuperRent Club Membership Management System.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Overview
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    This use case describes user logout from the SuperRent Club Membership Management System.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Type
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Essential
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Preconditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    UC - 1
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Post-conditions
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User successfully logged out of the system.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Primary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    Customer and Clerk
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Secondary Actor(s)
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User account management system
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top">
+                <p>
+                    Trigger
+                </p>
+            </td>
+            <td width="74%" valign="top" colspan="2">
+                <p>
+                    User clicks on “Logout” button or hyperlink
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="25%" valign="top" rowspan="2">
+                <p>
+                    <strong>Flow of events</strong>
+                </p>
+                <p>
+                    Basic Flow
+                </p>
+            </td>
+            <td width="32%" valign="top">
+                <p>
+                    <strong>Actor Action</strong>
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    <strong>System Response</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="32%" valign="top">
+                <p>
+                    1. User clicks on Logout button or the hyperlink.
+                </p>
+            </td>
+            <td width="41%" valign="top">
+                <p>
+                    1. The system responds by logging out the user and displaying a message to the user that the “logout” was successful.
+                </p>
+                <p>
+                    2. End of the Use Case.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+</br>
     </div>
      <!-- End page content -->
 </div>
